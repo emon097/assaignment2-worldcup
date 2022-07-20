@@ -226,3 +226,25 @@ margin-bottom: 3vh;
 }
 
 /*------- live-match-section-end --------*/
+/*------- animation-section start-------*/
+.link-button a {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    animation-name: example;
+    animation-duration: 10s;
+  }
+  
+  @keyframes example {
+
+    25%  {background-color:lightslategray;}
+    50%  {background-color:darkred ;}
+    100% {background-color: green;}
+  }
+
+ /*------- link-hover ------*/
+
+ .upcoming:hover { color: black; background-color: aliceblue; }
+ .blogs:hover { color: black; background-color: aliceblue; }
+ .full-match:hover { color: black; background-color: aliceblue;  }
+ /*-------- hover-end ------*/

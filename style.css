@@ -145,9 +145,9 @@ align-items: center;
 color: rgb(193, 190, 190);
 }
 .mainfooter{ text-align: center; 
-border-top: 0.3vh solid white;
+border-top: 1px solid white;
 padding-top: 7vh;
-border-width: -30%;
+font-display: ;
 
 }
 
@@ -250,3 +250,73 @@ margin-bottom: 3vh;
  .blogs:hover { color: black; background-color: aliceblue; }
  .full-match:hover { color: black; background-color: aliceblue;  }
  /*-------- hover-end ------*/
+ /* media-query */
+/*---- mobile-option -----*/
+ @media only screen and ( max-width:688px ){  
+
+    .container {
+        margin-left: 3vh;
+     width: 50vh;
+     height: 74vh;
+    display: flex;
+    flex-direction: column;
+    }
+    .card-title {  width: 47vh; font-size: 1.6vh;
+    text-align: center; }
+    .images img { width: 38vh; height: 100%;
+        align-content: center;
+    margin-top: 4vh;}
+    .link-button { padding: 0%; font-size: 2.5vh;
+    text-align: center;
+    padding-top: 35px;
+    margin-top: -.01vh;
+    }
+    .link-button a{ padding: 2vh; 
+    border-radius: 0.5vh;
+    }
+
+    .main-menu { display:grid;
+        grid-template-columns: repeat( 1 , 1fr );
+
+    }
+
+.match-flag {
+margin-left: 5vh;
+
+}
+
+.upcoming-option{  margin: 2vh;
+margin-left: 4vh;
+}
+.upcomming-main { display:grid;
+grid-template-columns: repeat( 1 , 1fr );  }
+    
+.all-blogs-section  { display: flex;
+flex-direction: column;
+padding-left: 3vh;
+}
+
+.main-side-nav { margin-bottom: 4vh;
+text-align: center;
+background-color: rgb(243, 212, 212);
+margin-left: 14.5vh;
+width: 30vh;
+}
+
+.live-match img { width: 15vh; 
+height: 10vh;
+margin-left: 5vh;
+}
+
+.live-button {  margin-left: 17vh; }
+
+
+.youtube1 {  margin-left: 5vh; 
+
+border-width: 2vh ;
+border: 0.8vh solid rgb(249, 76, 76) ;
+}
+iframe { width:40vh ; height: 30vh;  }
+
+  }
+  

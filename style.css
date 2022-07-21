@@ -246,9 +246,15 @@ margin-bottom: 3vh;
 
  /*------- link-hover ------*/
 
- .upcoming:hover { color: black; background-color: aliceblue; }
- .blogs:hover { color: black; background-color: aliceblue; }
- .full-match:hover { color: black; background-color: aliceblue;  }
+ .upcoming:hover { color: black; background-color: aliceblue;
+    border: .1vh solid gray;
+}
+ .blogs:hover { color: black; background-color: aliceblue; 
+border: .1vh solid gray;
+}
+ .full-match:hover { color: black; background-color: aliceblue; 
+    border: .1vh solid gray;
+}
  /*-------- hover-end ------*/
  /* media-query */
 /*---- mobile-option -----*/
@@ -289,7 +295,8 @@ margin-left: 5vh;
 margin-left: 4vh;
 }
 .upcomming-main { display:grid;
-grid-template-columns: repeat( 1 , 1fr );  }
+grid-template-columns: repeat( 1 , 1fr );
+}
     
 .all-blogs-section  { display: flex;
 flex-direction: column;
@@ -319,4 +326,35 @@ border: 0.8vh solid rgb(249, 76, 76) ;
 iframe { width:40vh ; height: 30vh;  }
 
   }
+/* mobile-option-end */
+/* ipad-option-start */
+  @media only screen and ( min-width:688px ) and (max-width:992px) {
+    .container {
+     width: 70vh;
+     height: 60vh;
+    }
+        
+    .card-title {  width: 47vh; font-size: 1.6vh;
+        text-align: center;  }    
+
+        .images img { width: 35vh; height: 100%;
+        padding-left: 1vh;
+        }
+
+.side-nav { display: flex;
+  gap: 2vh;  
+  text-align: center;
+
+}
+.main-side-nav{ background-color: white }
+
+.main-menu { display:grid;
+    grid-template-columns: repeat( 1 , 1fr );
+
+}
+.all-blogs-section { display: grid;
+    grid-template-columns: repeat( 2 ,1fr );
+}
+
+}
   
